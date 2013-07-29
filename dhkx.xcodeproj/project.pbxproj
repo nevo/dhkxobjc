@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEA7D77717A6293E0052680A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77617A6293E0052680A /* Foundation.framework */; };
+		DEA7D77C17A6293E0052680A /* dhkx.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEA7D77B17A6293E0052680A /* dhkx.h */; };
+		DEA7D77E17A6293E0052680A /* dhkx.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D77D17A6293E0052680A /* dhkx.m */; };
+		DEA7D78617A6293E0052680A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D78517A6293E0052680A /* SenTestingKit.framework */; };
+		DEA7D78817A6293E0052680A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D78717A6293E0052680A /* UIKit.framework */; };
+		DEA7D78917A6293E0052680A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77617A6293E0052680A /* Foundation.framework */; };
+		DEA7D78C17A6293E0052680A /* libdhkx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77317A6293E0052680A /* libdhkx.a */; };
+		DEA7D79217A6293E0052680A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEA7D79017A6293E0052680A /* InfoPlist.strings */; };
+		DEA7D79517A6293E0052680A /* dhkxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D79417A6293E0052680A /* dhkxTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEA7D78A17A6293E0052680A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA7D76B17A6293E0052680A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA7D77217A6293E0052680A;
+			remoteInfo = dhkx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DEA7D77117A6293E0052680A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				DEA7D77C17A6293E0052680A /* dhkx.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DEA7D77317A6293E0052680A /* libdhkx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdhkx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA7D77617A6293E0052680A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEA7D77A17A6293E0052680A /* dhkx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dhkx-Prefix.pch"; sourceTree = "<group>"; };
+		DEA7D77B17A6293E0052680A /* dhkx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dhkx.h; sourceTree = "<group>"; };
+		DEA7D77D17A6293E0052680A /* dhkx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dhkx.m; sourceTree = "<group>"; };
+		DEA7D78417A6293E0052680A /* dhkxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dhkxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA7D78517A6293E0052680A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DEA7D78717A6293E0052680A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DEA7D78F17A6293E0052680A /* dhkxTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dhkxTests-Info.plist"; sourceTree = "<group>"; };
+		DEA7D79117A6293E0052680A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DEA7D79317A6293E0052680A /* dhkxTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dhkxTests.h; sourceTree = "<group>"; };
+		DEA7D79417A6293E0052680A /* dhkxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dhkxTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEA7D77017A6293E0052680A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D77717A6293E0052680A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA7D78017A6293E0052680A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D78617A6293E0052680A /* SenTestingKit.framework in Frameworks */,
+				DEA7D78817A6293E0052680A /* UIKit.framework in Frameworks */,
+				DEA7D78917A6293E0052680A /* Foundation.framework in Frameworks */,
+				DEA7D78C17A6293E0052680A /* libdhkx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEA7D76A17A6293E0052680A = {
+			isa = PBXGroup;
+			children = (
+				DEA7D77817A6293E0052680A /* dhkx */,
+				DEA7D78D17A6293E0052680A /* dhkxTests */,
+				DEA7D77517A6293E0052680A /* Frameworks */,
+				DEA7D77417A6293E0052680A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEA7D77417A6293E0052680A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D77317A6293E0052680A /* libdhkx.a */,
+				DEA7D78417A6293E0052680A /* dhkxTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEA7D77517A6293E0052680A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D77617A6293E0052680A /* Foundation.framework */,
+				DEA7D78517A6293E0052680A /* SenTestingKit.framework */,
+				DEA7D78717A6293E0052680A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEA7D77817A6293E0052680A /* dhkx */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D77B17A6293E0052680A /* dhkx.h */,
+				DEA7D77D17A6293E0052680A /* dhkx.m */,
+				DEA7D77917A6293E0052680A /* Supporting Files */,
+			);
+			path = dhkx;
+			sourceTree = "<group>";
+		};
+		DEA7D77917A6293E0052680A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D77A17A6293E0052680A /* dhkx-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DEA7D78D17A6293E0052680A /* dhkxTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D79317A6293E0052680A /* dhkxTests.h */,
+				DEA7D79417A6293E0052680A /* dhkxTests.m */,
+				DEA7D78E17A6293E0052680A /* Supporting Files */,
+			);
+			path = dhkxTests;
+			sourceTree = "<group>";
+		};
+		DEA7D78E17A6293E0052680A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D78F17A6293E0052680A /* dhkxTests-Info.plist */,
+				DEA7D79017A6293E0052680A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEA7D77217A6293E0052680A /* dhkx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA7D79817A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx" */;
+			buildPhases = (
+				DEA7D76F17A6293E0052680A /* Sources */,
+				DEA7D77017A6293E0052680A /* Frameworks */,
+				DEA7D77117A6293E0052680A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dhkx;
+			productName = dhkx;
+			productReference = DEA7D77317A6293E0052680A /* libdhkx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DEA7D78317A6293E0052680A /* dhkxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA7D79B17A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkxTests" */;
+			buildPhases = (
+				DEA7D77F17A6293E0052680A /* Sources */,
+				DEA7D78017A6293E0052680A /* Frameworks */,
+				DEA7D78117A6293E0052680A /* Resources */,
+				DEA7D78217A6293E0052680A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA7D78B17A6293E0052680A /* PBXTargetDependency */,
+			);
+			name = dhkxTests;
+			productName = dhkxTests;
+			productReference = DEA7D78417A6293E0052680A /* dhkxTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEA7D76B17A6293E0052680A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Uniqush Project";
+			};
+			buildConfigurationList = DEA7D76E17A6293E0052680A /* Build configuration list for PBXProject "dhkx" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEA7D76A17A6293E0052680A;
+			productRefGroup = DEA7D77417A6293E0052680A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEA7D77217A6293E0052680A /* dhkx */,
+				DEA7D78317A6293E0052680A /* dhkxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEA7D78117A6293E0052680A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D79217A6293E0052680A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DEA7D78217A6293E0052680A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEA7D76F17A6293E0052680A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D77E17A6293E0052680A /* dhkx.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA7D77F17A6293E0052680A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D79517A6293E0052680A /* dhkxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEA7D78B17A6293E0052680A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA7D77217A6293E0052680A /* dhkx */;
+			targetProxy = DEA7D78A17A6293E0052680A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEA7D79017A6293E0052680A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEA7D79117A6293E0052680A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEA7D79617A6293E0052680A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DEA7D79717A6293E0052680A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEA7D79917A6293E0052680A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/dhkx.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DEA7D79A17A6293E0052680A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/dhkx.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DEA7D79C17A6293E0052680A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				INFOPLIST_FILE = "dhkxTests/dhkxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DEA7D79D17A6293E0052680A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				INFOPLIST_FILE = "dhkxTests/dhkxTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEA7D76E17A6293E0052680A /* Build configuration list for PBXProject "dhkx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA7D79617A6293E0052680A /* Debug */,
+				DEA7D79717A6293E0052680A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA7D79817A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA7D79917A6293E0052680A /* Debug */,
+				DEA7D79A17A6293E0052680A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEA7D79B17A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA7D79C17A6293E0052680A /* Debug */,
+				DEA7D79D17A6293E0052680A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEA7D76B17A6293E0052680A /* Project object */;
+}
