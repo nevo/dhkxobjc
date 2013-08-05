@@ -17,25 +17,108 @@
 
 #import "dhkxTests.h"
 
+
+@interface DHKey (UnitTestExport)
+
+
+@property(nonatomic, retain) DHGroup *group;
+
+
+- (NSData *)keyToData:(BIGNUM *)key;
+- (int)generatePublicKey:(BIGNUM *)pubKey
+           forPrivateKey:(BIGNUM *)privKey;
+- (void)resetKey;
+
+
+@end
+
+
+@interface DHKey (UnitTest)
+
+
+@property(nonatomic, readonly) BIGNUM *x;
+@property(nonatomic, readonly) BIGNUM *y;
+
+
+- (int)generatePublicKeyFromPrivateKey:(BIGNUM *)privKey;
+
+
+@end
+
+@implementation DHKey (UnitTest)
+
+
+- (BIGNUM *)x
+{
+    return x;
+}
+
+
+- (BIGNUM *)y
+{
+    return y;
+}
+
+
+- (int)generatePublicKeyFromPrivateKey:(BIGNUM *)privKey
+{
+    [self resetKey];
+
+    x = BN_dup(privKey);
+    y = BN_new();
+
+    return [self generatePublicKey:y
+                     forPrivateKey:x];
+}
+
+
+@end
+
+
 @implementation dhkxTests
+
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+
+    lP = BN_new();
+    lG = BN_new();
+    xa = BN_new();
+    xb = BN_new();
+    ya = BN_new();
+    yb = BN_new();
+    zz = BN_new();
 }
+
 
 - (void)tearDown
 {
-    // Tear-down code here.
-    
+    BN_free(lP);
+    BN_free(lG);
+    BN_free(xa);
+    BN_free(xb);
+    BN_free(ya);
+    BN_free(yb);
+    BN_free(zz);
+
     [super tearDown];
 }
 
-- (void)testExample
-{
-    STFail(@"Unit tests are not implemented yet in dhkxTests");
-}
+
+/*
+ * Test Subject:
+ *   NIST FCC DH static key validation scheme
+ *
+ * The test vector is from:
+ *   http://csrc.nist.gov/groups/STM/cavp/documents/keymgmt/kastestvectors.zip
+ *
+ * The related doc is:
+ *   http://csrc.nist.gov/publications/nistpubs/800-56A/SP800-56A_Revision1_Mar08-2007.pdf
+ */
+
+// The testKAS.inc will be generated via parseKAS.pl
+#include "NIST/testKAS.inc"
+
 
 @end

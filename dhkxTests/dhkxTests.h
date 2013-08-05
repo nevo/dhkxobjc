@@ -16,7 +16,20 @@
  */
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "DHGroup.h"
+#import "DHKey.h"
+
 
 @interface dhkxTests : SenTestCase
+{
+    BIGNUM *lP;
+    BIGNUM *lG;
+    BIGNUM *xa;
+    BIGNUM *xb;
+    BIGNUM *ya;
+    BIGNUM *yb;
+    BIGNUM *zz;
+}
+
 
 @end
