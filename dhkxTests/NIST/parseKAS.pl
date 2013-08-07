@@ -74,7 +74,7 @@ while (<>) {
             print "\n";
             print "    secret = [key computeSecretWithPublicKey:[key keyToData:yb]];\n";
             print "    STAssertTrue(secret != nil, @\"computeSecretWithPublicKey: -> xa/yb failure\");\n";
-            print "    s = BN_bin2bn([secret bytes], [secret length], NULL);\n";
+            print "    s = BN_bin2bn([secret bytes], (int)[secret length], NULL);\n";
             print "    STAssertTrue(BN_cmp(s, zz) == 0, @\"computeSecretWithPublicKey: -> xa/yb/zz failure\");\n";
             print "    BN_free(s);\n";
             print "\n";
@@ -83,7 +83,7 @@ while (<>) {
             print "\n";
             print "    secret = [key computeSecretWithPublicKey:[key keyToData:ya]];\n";
             print "    STAssertTrue(secret != nil, @\"computeSecretWithPublicKey: -> xb/ya failure\");\n";
-            print "    s = BN_bin2bn([secret bytes], [secret length], NULL);\n";
+            print "    s = BN_bin2bn([secret bytes], (int)[secret length], NULL);\n";
             print "    STAssertTrue(BN_cmp(s, zz) == 0, @\"computeSecretWithPublicKey: -> xb/ya/zz failure\");\n";
             print "    BN_free(s);\n";
             print "\n";

@@ -148,7 +148,7 @@
 
 - (NSData *)computeSecretWithPublicKey:(NSData *)pubKey
 {
-    BIGNUM *pub = BN_bin2bn([pubKey bytes], [pubKey length], NULL);
+    BIGNUM *pub = BN_bin2bn([pubKey bytes], (int)[pubKey length], NULL);
     if (!pub) {
         return nil;
     }

@@ -11,13 +11,22 @@
 		DEA7D78617A6293E0052680A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D78517A6293E0052680A /* SenTestingKit.framework */; };
 		DEA7D78817A6293E0052680A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D78717A6293E0052680A /* UIKit.framework */; };
 		DEA7D78917A6293E0052680A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77617A6293E0052680A /* Foundation.framework */; };
-		DEA7D78C17A6293E0052680A /* libdhkx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77317A6293E0052680A /* libdhkx.a */; };
+		DEA7D78C17A6293E0052680A /* libdhkx-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77317A6293E0052680A /* libdhkx-ios.a */; };
 		DEA7D79217A6293E0052680A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEA7D79017A6293E0052680A /* InfoPlist.strings */; };
 		DEA7D79517A6293E0052680A /* dhkxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D79417A6293E0052680A /* dhkxTests.m */; };
 		DEA7D7A017A64E620052680A /* DHGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D79F17A64E620052680A /* DHGroup.m */; };
 		DEA7D7A217A64EE60052680A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D7A117A64EE60052680A /* Security.framework */; };
 		DEA7D85317A9FE120052680A /* DHKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D85217A9FE120052680A /* DHKey.m */; };
 		DEA7D85817AFC47C0052680A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D85717AFC47C0052680A /* libz.dylib */; };
+		DEA7D86017B2371F0052680A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D85F17B2371F0052680A /* Cocoa.framework */; };
+		DEA7D87117B237200052680A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D78517A6293E0052680A /* SenTestingKit.framework */; };
+		DEA7D87217B237200052680A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D85F17B2371F0052680A /* Cocoa.framework */; };
+		DEA7D87517B237200052680A /* libdhkx-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D85E17B2371F0052680A /* libdhkx-osx.a */; };
+		DEA7D88517B237B60052680A /* DHKey.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D85217A9FE120052680A /* DHKey.m */; };
+		DEA7D88617B237BA0052680A /* DHGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D79F17A64E620052680A /* DHGroup.m */; };
+		DEA7D88717B237C90052680A /* dhkxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D79417A6293E0052680A /* dhkxTests.m */; };
+		DEA7D88817B237DF0052680A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEA7D79017A6293E0052680A /* InfoPlist.strings */; };
+		DEA7D88A17B239720052680A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D85717AFC47C0052680A /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +36,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = DEA7D77217A6293E0052680A;
 			remoteInfo = dhkx;
+		};
+		DEA7D87317B237200052680A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA7D76B17A6293E0052680A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA7D85D17B2371F0052680A;
+			remoteInfo = dhkxosx;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,7 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DEA7D77317A6293E0052680A /* libdhkx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdhkx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA7D77317A6293E0052680A /* libdhkx-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdhkx-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA7D77617A6293E0052680A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEA7D77A17A6293E0052680A /* dhkx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dhkx-Prefix.pch"; sourceTree = "<group>"; };
 		DEA7D78417A6293E0052680A /* dhkxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dhkxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +235,12 @@
 		DEA7D85517AFB5E40052680A /* KASValidityTest_FFCStatic_NOKC_ZZOnly_resp.fax */ = {isa = PBXFileReference; lastKnownFileType = text; path = KASValidityTest_FFCStatic_NOKC_ZZOnly_resp.fax; sourceTree = "<group>"; };
 		DEA7D85617AFB5E40052680A /* parseKAS.pl */ = {isa = PBXFileReference; lastKnownFileType = text.script.perl; path = parseKAS.pl; sourceTree = "<group>"; };
 		DEA7D85717AFC47C0052680A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DEA7D85E17B2371F0052680A /* libdhkx-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdhkx-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA7D85F17B2371F0052680A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		DEA7D86217B2371F0052680A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DEA7D86317B2371F0052680A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DEA7D86417B2371F0052680A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DEA7D87017B2371F0052680A /* dhkx-osxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dhkx-osxTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,7 +261,26 @@
 				DEA7D78617A6293E0052680A /* SenTestingKit.framework in Frameworks */,
 				DEA7D78817A6293E0052680A /* UIKit.framework in Frameworks */,
 				DEA7D78917A6293E0052680A /* Foundation.framework in Frameworks */,
-				DEA7D78C17A6293E0052680A /* libdhkx.a in Frameworks */,
+				DEA7D78C17A6293E0052680A /* libdhkx-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA7D85B17B2371F0052680A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D86017B2371F0052680A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA7D86C17B2371F0052680A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D87117B237200052680A /* SenTestingKit.framework in Frameworks */,
+				DEA7D87217B237200052680A /* Cocoa.framework in Frameworks */,
+				DEA7D87517B237200052680A /* libdhkx-osx.a in Frameworks */,
+				DEA7D88A17B239720052680A /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +301,10 @@
 		DEA7D77417A6293E0052680A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DEA7D77317A6293E0052680A /* libdhkx.a */,
+				DEA7D77317A6293E0052680A /* libdhkx-ios.a */,
 				DEA7D78417A6293E0052680A /* dhkxTests.octest */,
+				DEA7D85E17B2371F0052680A /* libdhkx-osx.a */,
+				DEA7D87017B2371F0052680A /* dhkx-osxTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,6 +317,8 @@
 				DEA7D77617A6293E0052680A /* Foundation.framework */,
 				DEA7D78517A6293E0052680A /* SenTestingKit.framework */,
 				DEA7D78717A6293E0052680A /* UIKit.framework */,
+				DEA7D85F17B2371F0052680A /* Cocoa.framework */,
+				DEA7D86117B2371F0052680A /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -580,12 +625,32 @@
 			path = NIST;
 			sourceTree = "<group>";
 		};
+		DEA7D86117B2371F0052680A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEA7D86217B2371F0052680A /* AppKit.framework */,
+				DEA7D86317B2371F0052680A /* CoreData.framework */,
+				DEA7D86417B2371F0052680A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		DEA7D85C17B2371F0052680A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		DEA7D77217A6293E0052680A /* dhkx */ = {
+		DEA7D77217A6293E0052680A /* dhkx-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA7D79817A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx" */;
+			buildConfigurationList = DEA7D79817A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx-ios" */;
 			buildPhases = (
 				DEA7D76F17A6293E0052680A /* Sources */,
 				DEA7D77017A6293E0052680A /* Frameworks */,
@@ -595,14 +660,14 @@
 			);
 			dependencies = (
 			);
-			name = dhkx;
+			name = "dhkx-ios";
 			productName = dhkx;
-			productReference = DEA7D77317A6293E0052680A /* libdhkx.a */;
+			productReference = DEA7D77317A6293E0052680A /* libdhkx-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		DEA7D78317A6293E0052680A /* dhkxTests */ = {
+		DEA7D78317A6293E0052680A /* dhkx-iosTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DEA7D79B17A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkxTests" */;
+			buildConfigurationList = DEA7D79B17A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx-iosTests" */;
 			buildPhases = (
 				DEA7D85917AFD0F50052680A /* Generate Test Cases */,
 				DEA7D77F17A6293E0052680A /* Sources */,
@@ -615,9 +680,46 @@
 			dependencies = (
 				DEA7D78B17A6293E0052680A /* PBXTargetDependency */,
 			);
-			name = dhkxTests;
+			name = "dhkx-iosTests";
 			productName = dhkxTests;
 			productReference = DEA7D78417A6293E0052680A /* dhkxTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DEA7D85D17B2371F0052680A /* dhkx-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA7D87F17B237200052680A /* Build configuration list for PBXNativeTarget "dhkx-osx" */;
+			buildPhases = (
+				DEA7D85A17B2371F0052680A /* Sources */,
+				DEA7D85B17B2371F0052680A /* Frameworks */,
+				DEA7D85C17B2371F0052680A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dhkx-osx";
+			productName = dhkxosx;
+			productReference = DEA7D85E17B2371F0052680A /* libdhkx-osx.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DEA7D86F17B2371F0052680A /* dhkx-osxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA7D88217B237200052680A /* Build configuration list for PBXNativeTarget "dhkx-osxTests" */;
+			buildPhases = (
+				DEA7D88917B238B50052680A /* Generate Test Cases */,
+				DEA7D86B17B2371F0052680A /* Sources */,
+				DEA7D86C17B2371F0052680A /* Frameworks */,
+				DEA7D86D17B2371F0052680A /* Resources */,
+				DEA7D86E17B2371F0052680A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA7D87417B237200052680A /* PBXTargetDependency */,
+			);
+			name = "dhkx-osxTests";
+			productName = dhkxosxTests;
+			productReference = DEA7D87017B2371F0052680A /* dhkx-osxTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -641,8 +743,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DEA7D77217A6293E0052680A /* dhkx */,
-				DEA7D78317A6293E0052680A /* dhkxTests */,
+				DEA7D77217A6293E0052680A /* dhkx-ios */,
+				DEA7D78317A6293E0052680A /* dhkx-iosTests */,
+				DEA7D85D17B2371F0052680A /* dhkx-osx */,
+				DEA7D86F17B2371F0052680A /* dhkx-osxTests */,
 			);
 		};
 /* End PBXProject section */
@@ -653,6 +757,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA7D79217A6293E0052680A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA7D86D17B2371F0052680A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D88817B237DF0052680A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,6 +798,33 @@
 			shellPath = /bin/sh;
 			shellScript = "echo \"Generate test cases from ${SRCROOT}/dhkxTests/NIST/KASValidityTest_FFCStatic_NOKC_ZZOnly_resp.fax\"\nrm -f ${SRCROOT}/dhkxTests/NIST/testKAS.inc\nperl ${SRCROOT}/dhkxTests/NIST/parseKAS.pl ${SRCROOT}/dhkxTests/NIST/KASValidityTest_FFCStatic_NOKC_ZZOnly_resp.fax > ${SRCROOT}/dhkxTests/NIST/testKAS.inc";
 		};
+		DEA7D86E17B2371F0052680A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		DEA7D88917B238B50052680A /* Generate Test Cases */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Test Cases";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Generate test cases from ${SRCROOT}/dhkxTests/NIST/KASValidityTest_FFCStatic_NOKC_ZZOnly_resp.fax\"\nrm -f ${SRCROOT}/dhkxTests/NIST/testKAS.inc\nperl ${SRCROOT}/dhkxTests/NIST/parseKAS.pl ${SRCROOT}/dhkxTests/NIST/KASValidityTest_FFCStatic_NOKC_ZZOnly_resp.fax > ${SRCROOT}/dhkxTests/NIST/testKAS.inc";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -706,13 +845,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEA7D85A17B2371F0052680A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D88517B237B60052680A /* DHKey.m in Sources */,
+				DEA7D88617B237BA0052680A /* DHGroup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA7D86B17B2371F0052680A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA7D88717B237C90052680A /* dhkxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		DEA7D78B17A6293E0052680A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DEA7D77217A6293E0052680A /* dhkx */;
+			target = DEA7D77217A6293E0052680A /* dhkx-ios */;
 			targetProxy = DEA7D78A17A6293E0052680A /* PBXContainerItemProxy */;
+		};
+		DEA7D87417B237200052680A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA7D85D17B2371F0052680A /* dhkx-osx */;
+			targetProxy = DEA7D87317B237200052680A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -861,6 +1022,96 @@
 			};
 			name = Release;
 		};
+		DEA7D88017B237200052680A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/openssl-1.0.1e/macosx/include";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/lib/openssl-1.0.1e/macosx/lib/libssl.a",
+					"$(SRCROOT)/lib/openssl-1.0.1e/macosx/lib/libcrypto.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DEA7D88117B237200052680A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/openssl-1.0.1e/macosx/include";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"$(SRCROOT)/lib/openssl-1.0.1e/macosx/lib/libssl.a",
+					"$(SRCROOT)/lib/openssl-1.0.1e/macosx/lib/libcrypto.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DEA7D88317B237200052680A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/openssl-1.0.1e/macosx/include";
+				INFOPLIST_FILE = "dhkxTests/dhkxTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DEA7D88417B237200052680A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dhkx/dhkx-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/openssl-1.0.1e/macosx/include";
+				INFOPLIST_FILE = "dhkxTests/dhkxTests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_AFTER_BUILD = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -873,7 +1124,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DEA7D79817A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx" */ = {
+		DEA7D79817A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA7D79917A6293E0052680A /* Debug */,
@@ -881,11 +1132,27 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		DEA7D79B17A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkxTests" */ = {
+		DEA7D79B17A6293E0052680A /* Build configuration list for PBXNativeTarget "dhkx-iosTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA7D79C17A6293E0052680A /* Debug */,
 				DEA7D79D17A6293E0052680A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEA7D87F17B237200052680A /* Build configuration list for PBXNativeTarget "dhkx-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA7D88017B237200052680A /* Debug */,
+				DEA7D88117B237200052680A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEA7D88217B237200052680A /* Build configuration list for PBXNativeTarget "dhkx-osxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA7D88317B237200052680A /* Debug */,
+				DEA7D88417B237200052680A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
