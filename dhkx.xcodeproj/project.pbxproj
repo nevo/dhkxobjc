@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DEA7D77717A6293E0052680A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77617A6293E0052680A /* Foundation.framework */; };
-		DEA7D77C17A6293E0052680A /* dhkx.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEA7D77B17A6293E0052680A /* dhkx.h */; };
-		DEA7D77E17A6293E0052680A /* dhkx.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA7D77D17A6293E0052680A /* dhkx.m */; };
 		DEA7D78617A6293E0052680A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D78517A6293E0052680A /* SenTestingKit.framework */; };
 		DEA7D78817A6293E0052680A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D78717A6293E0052680A /* UIKit.framework */; };
 		DEA7D78917A6293E0052680A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA7D77617A6293E0052680A /* Foundation.framework */; };
@@ -39,7 +37,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				DEA7D77C17A6293E0052680A /* dhkx.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,8 +46,6 @@
 		DEA7D77317A6293E0052680A /* libdhkx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libdhkx.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA7D77617A6293E0052680A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DEA7D77A17A6293E0052680A /* dhkx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dhkx-Prefix.pch"; sourceTree = "<group>"; };
-		DEA7D77B17A6293E0052680A /* dhkx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dhkx.h; sourceTree = "<group>"; };
-		DEA7D77D17A6293E0052680A /* dhkx.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dhkx.m; sourceTree = "<group>"; };
 		DEA7D78417A6293E0052680A /* dhkxTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dhkxTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA7D78517A6293E0052680A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DEA7D78717A6293E0052680A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -290,8 +285,6 @@
 				DEA7D85217A9FE120052680A /* DHKey.m */,
 				DEA7D79E17A64E620052680A /* DHGroup.h */,
 				DEA7D79F17A64E620052680A /* DHGroup.m */,
-				DEA7D77B17A6293E0052680A /* dhkx.h */,
-				DEA7D77D17A6293E0052680A /* dhkx.m */,
 				DEA7D77917A6293E0052680A /* Supporting Files */,
 			);
 			path = dhkx;
@@ -700,7 +693,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA7D77E17A6293E0052680A /* dhkx.m in Sources */,
 				DEA7D7A017A64E620052680A /* DHGroup.m in Sources */,
 				DEA7D85317A9FE120052680A /* DHKey.m in Sources */,
 			);
