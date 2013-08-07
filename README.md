@@ -1,6 +1,6 @@
 Introduction
 ====================
-This is an implementation of components in Objective C for Diffie Hellman Key Exchange algorithm [DH][http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange]. The APIs are pretty much self-explained in code.
+This is an implementation of components in Objective C for Diffie Hellman Key Exchange algorithm [DH](http://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange). The APIs are pretty much self-explained in code.
 The classes are inspired from Go version of [DHKX](monnand/dhkx)
 
 Installation
